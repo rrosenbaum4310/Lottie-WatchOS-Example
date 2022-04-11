@@ -2,7 +2,7 @@
 
 An example project to show how to implement Lottie Animations on WatchOS using SwiftUI despite native support for the common Lottie implementation on iOS.
 
-<https://blog.ryanrosenbaum.dev/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Funsplash%2F8b1cWDyvT7Y%2Fupload%2Fv1649698038645%2F2suiCL5Lm.jpeg%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&w=3840&q=75>
+[Hashnode Image]<https://blog.ryanrosenbaum.dev/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Funsplash%2F8b1cWDyvT7Y%2Fupload%2Fv1649698038645%2F2suiCL5Lm.jpeg%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&w=3840&q=75>
 
 ## Motivation
 
