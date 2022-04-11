@@ -1,4 +1,6 @@
 # Lottie-WatchOS-Example
+### Article can be found [here](https://blog.ryanrosenbaum.dev/swift-ui-lottie)
+
 ![Photo courtesy of Unsplash](https://github.com/rrosenbaum4310/Lottie-WatchOS-Example/blob/main/mitchell-hollander-8b1cWDyvT7Y-unsplash.jpg)
 
 An example project to show how to implement Lottie Animations on WatchOS using SwiftUI despite native support for the common Lottie implementation on iOS.
