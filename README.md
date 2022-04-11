@@ -21,7 +21,7 @@ In this fictional application, we are running the user through a workout with an
 
 Using Lottie is a perfect example here, as this is a use scenarion where an image just can't communicate what a Lottie Animation can do.
 
-Once the SDWebImage package is updated and running smoothly in the project, run the project on a WatchOS simulator to see an example animation from [IconJar](https://www.iconjar.com) with a perfect example to extend this idea further.
+Once the SDWebImage package is updated and running smoothly in the project, run the project on a WatchOS simulator to see an example animation from [IconScout](https://iconscout.com/) with a perfect example to extend this idea further.
 
 
 ## Inspiration
@@ -30,6 +30,6 @@ Although information on this practice is sparse on the internet, there were a fe
 
 ## About
 
-Hi, [I'm Ryan Rosenbaum](https://www.ryanrosenbaum.dev). I’m a software engineer specializing in building and designing experiences with technology. Currently, I’m focused on Phlex, creating the future of swimming with machine learning intelligence.
+Hi, [I'm Ryan Rosenbaum](https://www.ryanrosenbaum.dev).
 
 
