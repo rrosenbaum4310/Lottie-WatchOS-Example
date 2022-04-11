@@ -17,6 +17,10 @@
 		DA44A7852804B55200EA7EC3 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA44A7842804B55200EA7EC3 /* ComplicationController.swift */; };
 		DA44A7872804B55300EA7EC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA44A7862804B55300EA7EC3 /* Assets.xcassets */; };
 		DA44A78A2804B55300EA7EC3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA44A7892804B55300EA7EC3 /* Preview Assets.xcassets */; };
+		DA44A79D2804B62500EA7EC3 /* LottieFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA44A79C2804B62500EA7EC3 /* LottieFileManager.swift */; };
+		DA44A7A02804B69100EA7EC3 /* SDWebImageLottieCoder in Frameworks */ = {isa = PBXBuildFile; productRef = DA44A79F2804B69100EA7EC3 /* SDWebImageLottieCoder */; };
+		DA44A7A22804B70900EA7EC3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA44A7A12804B70900EA7EC3 /* MainView.swift */; };
+		DA44A7A72804B99700EA7EC3 /* feet-on-ball-hip-thrust-workout.json in Resources */ = {isa = PBXBuildFile; fileRef = DA44A7A62804B99700EA7EC3 /* feet-on-ball-hip-thrust-workout.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +79,9 @@
 		DA44A7892804B55300EA7EC3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DA44A78B2804B55300EA7EC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA44A78C2804B55300EA7EC3 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		DA44A79C2804B62500EA7EC3 /* LottieFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieFileManager.swift; sourceTree = "<group>"; };
+		DA44A7A12804B70900EA7EC3 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		DA44A7A62804B99700EA7EC3 /* feet-on-ball-hip-thrust-workout.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "feet-on-ball-hip-thrust-workout.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA44A7A02804B69100EA7EC3 /* SDWebImageLottieCoder in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +102,7 @@
 				DA44A7702804B55100EA7EC3 /* Lottie-WatchOS-Example WatchKit App */,
 				DA44A77B2804B55200EA7EC3 /* Lottie-WatchOS-Example WatchKit Extension */,
 				DA44A7692804B55100EA7EC3 /* Products */,
+				DA44A79E2804B69100EA7EC3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -120,8 +129,11 @@
 			children = (
 				DA44A77C2804B55200EA7EC3 /* Lottie_WatchOS_ExampleApp.swift */,
 				DA44A77E2804B55200EA7EC3 /* ContentView.swift */,
+				DA44A7A12804B70900EA7EC3 /* MainView.swift */,
 				DA44A7802804B55200EA7EC3 /* NotificationController.swift */,
 				DA44A7822804B55200EA7EC3 /* NotificationView.swift */,
+				DA44A79C2804B62500EA7EC3 /* LottieFileManager.swift */,
+				DA44A7A32804B80200EA7EC3 /* LottieFiles */,
 				DA44A7842804B55200EA7EC3 /* ComplicationController.swift */,
 				DA44A7862804B55300EA7EC3 /* Assets.xcassets */,
 				DA44A78B2804B55300EA7EC3 /* Info.plist */,
@@ -137,6 +149,21 @@
 				DA44A7892804B55300EA7EC3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DA44A79E2804B69100EA7EC3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA44A7A32804B80200EA7EC3 /* LottieFiles */ = {
+			isa = PBXGroup;
+			children = (
+				DA44A7A62804B99700EA7EC3 /* feet-on-ball-hip-thrust-workout.json */,
+			);
+			path = LottieFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +182,9 @@
 				DA44A76F2804B55100EA7EC3 /* PBXTargetDependency */,
 			);
 			name = "Lottie-WatchOS-Example";
+			packageProductDependencies = (
+				DA44A79B2804B5C700EA7EC3 /* SDWebImageLottieCoder */,
+			);
 			productName = "Lottie-WatchOS-Example";
 			productReference = DA44A7682804B55100EA7EC3 /* Lottie-WatchOS-Example.app */;
 			productType = "com.apple.product-type.application.watchapp2-container";
@@ -189,6 +219,9 @@
 			dependencies = (
 			);
 			name = "Lottie-WatchOS-Example WatchKit Extension";
+			packageProductDependencies = (
+				DA44A79F2804B69100EA7EC3 /* SDWebImageLottieCoder */,
+			);
 			productName = "Lottie-WatchOS-Example WatchKit Extension";
 			productReference = DA44A7772804B55200EA7EC3 /* Lottie-WatchOS-Example WatchKit Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
@@ -223,6 +256,9 @@
 				Base,
 			);
 			mainGroup = DA44A7612804B55100EA7EC3;
+			packageReferences = (
+				DA44A79A2804B5C700EA7EC3 /* XCRemoteSwiftPackageReference "SDWebImageLottieCoder" */,
+			);
 			productRefGroup = DA44A7692804B55100EA7EC3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -256,6 +292,7 @@
 			files = (
 				DA44A78A2804B55300EA7EC3 /* Preview Assets.xcassets in Resources */,
 				DA44A7872804B55300EA7EC3 /* Assets.xcassets in Resources */,
+				DA44A7A72804B99700EA7EC3 /* feet-on-ball-hip-thrust-workout.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +303,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA44A79D2804B62500EA7EC3 /* LottieFileManager.swift in Sources */,
+				DA44A7A22804B70900EA7EC3 /* MainView.swift in Sources */,
 				DA44A7812804B55200EA7EC3 /* NotificationController.swift in Sources */,
 				DA44A77F2804B55200EA7EC3 /* ContentView.swift in Sources */,
 				DA44A7852804B55200EA7EC3 /* ComplicationController.swift in Sources */,
@@ -409,7 +448,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Lottie-WatchOS-Example WatchKit Extension/Preview Content\"";
-				DEVELOPMENT_TEAM = 5TE43T4JX9;
+				DEVELOPMENT_TEAM = 85NNGD7X37;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Lottie-WatchOS-Example WatchKit Extension/Info.plist";
@@ -441,7 +480,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Lottie-WatchOS-Example WatchKit Extension/Preview Content\"";
-				DEVELOPMENT_TEAM = 5TE43T4JX9;
+				DEVELOPMENT_TEAM = 85NNGD7X37;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Lottie-WatchOS-Example WatchKit Extension/Info.plist";
@@ -474,7 +513,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5TE43T4JX9;
+				DEVELOPMENT_TEAM = 85NNGD7X37;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = Lottie_WatchOS_Example_WatchKit_Extension;
 				INFOPLIST_KEY_CFBundleDisplayName = "Lottie-WatchOS-Example WatchKit App";
@@ -499,7 +538,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5TE43T4JX9;
+				DEVELOPMENT_TEAM = 85NNGD7X37;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = Lottie_WatchOS_Example_WatchKit_Extension;
 				INFOPLIST_KEY_CFBundleDisplayName = "Lottie-WatchOS-Example WatchKit App";
@@ -521,7 +560,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5TE43T4JX9;
+				DEVELOPMENT_TEAM = 85NNGD7X37;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "rrosenbaum.Lottie-WatchOS-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -534,7 +573,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5TE43T4JX9;
+				DEVELOPMENT_TEAM = 85NNGD7X37;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "rrosenbaum.Lottie-WatchOS-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -582,6 +621,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DA44A79A2804B5C700EA7EC3 /* XCRemoteSwiftPackageReference "SDWebImageLottieCoder" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageLottieCoder.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DA44A79B2804B5C700EA7EC3 /* SDWebImageLottieCoder */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA44A79A2804B5C700EA7EC3 /* XCRemoteSwiftPackageReference "SDWebImageLottieCoder" */;
+			productName = SDWebImageLottieCoder;
+		};
+		DA44A79F2804B69100EA7EC3 /* SDWebImageLottieCoder */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA44A79A2804B5C700EA7EC3 /* XCRemoteSwiftPackageReference "SDWebImageLottieCoder" */;
+			productName = SDWebImageLottieCoder;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DA44A7622804B55100EA7EC3 /* Project object */;
 }

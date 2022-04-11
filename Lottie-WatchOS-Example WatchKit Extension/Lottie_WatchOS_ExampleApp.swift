@@ -11,9 +11,9 @@ import SwiftUI
 struct Lottie_WatchOS_ExampleApp: App {
     @SceneBuilder var body: some Scene {
         WindowGroup {
-            NavigationView {
-                ContentView()
-            }
+                ContentView().edgesIgnoringSafeArea(.all)
+                    .edgesIgnoringSafeArea(.all)
+            
         }
 
         WKNotificationScene(controller: NotificationController.self, category: "myCategory")
